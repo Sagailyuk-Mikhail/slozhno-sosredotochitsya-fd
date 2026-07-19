@@ -4,6 +4,7 @@
     /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
     font-family: var(--main-font);
     background-color: var(--bg-color);
+    background-attachment: fixed;
 }
 
 .header {
@@ -143,6 +144,8 @@
     line-height: var(--main-text-height);
     font-weight: bold;
     letter-spacing: 1px;
+    grid-column: 1 / -1;
+    margin-bottom: 15px;
 }
 
 .section-text {
@@ -192,11 +195,6 @@
     padding: 0;
 }
 
-.section-title {
-    grid-column: 1 / -1;
-    margin-bottom: 15px;
-}
-
 .article-photo {
     display: grid;
     grid-template-columns: 1fr;
@@ -244,7 +242,8 @@
     }
 
     .header__title {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem)
+        font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+        margin-left: -20px;
     }
 
     .corner_top-right {
@@ -255,10 +254,6 @@
     .corner_bottom-left {
         bottom: 20px;
         left: 20px;
-    }
-
-    .header__title {
-        margin-left: -20px;
     }
 
     .title {
@@ -320,9 +315,6 @@
 
     .special-section-text {
         margin-top: 10px;
-    }
-
-    .special-section-text {
         word-spacing: -1px;
     }
 
