@@ -393,21 +393,13 @@
     }
 
     .section {
-        gap: 5px 12px;
-    }
-
-    .article {
-        margin-top: 15px;
-    }
-
-    .section-text {
-        letter-spacing: 0.05em;
+        column-gap: 10px;
     }
 
     .spetial-section {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, minmax(70px, auto));
+        grid-template-rows: repeat(2, minmax(47px, auto));
         gap: 20px;
         align-items: start;
     }
