@@ -6,47 +6,13 @@
 :root.theme-dark {
     --bg-color: #000028;
     --background-image: url("../images/cover-image-dark.png");
-    --decor-color: #ff0070;
-    --main-text-color: #f1b2ce;
+    --decor-color: #FF0070;
     --accent-color: #ff0070;
+    --main-text-color: #f1b2ce;
     --title-color: #db00ff;
     --section-title-color: #ff0070;
     --button-color: #ff0070;
     --text-color-titles: #FF0070;
     --titles-color: #000028;
-}
-
-@media (prefers-color-scheme: dark) {
-    :root.theme-dark .header::before {
-        content: 'REC';
-        position: absolute;
-        top: 11px;
-        right: 40px;
-        color: var(--decor-color);
-        font-size: 18px;
-    }
-
-    :root.theme-dark .header::after {
-        content: '';
-        position: absolute;
-        top: 18px;
-        right: 19px;
-        width: 9px;
-        height: 9px;
-        border-radius: 50%;
-        background-color: var(--decor-color);
-    }
-}
-
-@media (min-width: 768px) {
-    :root.theme-dark .header::before {
-        top: 22px;
-        right: 50px;
-    }
-
-    :root.theme-dark .header::after {
-        top: 28px;
-        right: 29px;
-    }
-
+    --rec-display: block;
 }
